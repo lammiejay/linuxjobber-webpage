@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./linuxjobber logo.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="interest.css">
+    <title>LInuXjoBBer CLassRoom Profile</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <img src="./linuxjobber logo.svg">
+            <p>Classroom Profile</p>
+            <p class="classroom-link">
+                Go to Classroom
+                <i class="fa-solid fa-angle-right"></i>
+            </p>
+        </nav>
+    </div>
+    <main>
+        <div class="left">
+            <div class="profile-img">
+                <img src="./Gbadamosi Olamide.jpg" class="profile-picture">
+                <div class="camera-div">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <h2>Gbadamosi Olamide</h2>
+
+            <div class="short-links">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="courses">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Courses</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="attendance">
+                    <i class="fa-solid fa-check att-check"></i>
+                    <p>Attendance</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>&nbsp Logout</p>
+            </div>
+        </div>
+        <div class="right">
+            <form>
+                    <p>Score your level of interest in these job titles:</p>
+                <div class="range-sliders">
+                    <div class="slide-one">
+                        <div class="cybersecurity range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">CyberSecurity</label>
+                               <p><span id="value-1"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange1" class="slider" min="0" max="10" value="1">
+                        </div>
+                        <div class="project-manager range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Project Manager</label>
+                               <p><span id="value-2"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange2" class="slider" min="0" max="10" value="1">
+                        </div>
+                    </div>
+                    <div class="slide-one">
+                        <div class="developer range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Developer</label>
+                               <p><span id="value-3"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange3" class="slider" min="0" max="10" value="5">
+                        </div>
+                        <div class="product-manager range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Product Manager</label>
+                             <p><span id="value-4"></span>/10  </p> 
+                            </div>
+                            
+                            <input type="range" id="myRange4" class="slider" min="0" max="10" value="1">
+                        </div>
+                    </div>
+                    <div class="slide-one">
+                        <div class="devops range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">DevOps</label>
+                               <p><span id="value-5"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange5" class="slider" min="0" max="10" value="1">
+                        </div>
+                        <div class="marketer range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Marketer</label>
+                               <p><span id="value-6"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange6" class="slider" min="0" max="10" value="2">
+                        </div>
+                    </div>
+                    <div class="slide-one">
+                        <div class="designer range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Designer</label>
+                               <p><span id="value-7"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange7" class="slider" min="0" max="10" value="3">
+                        </div>
+                        <div class="writer range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Writer</label>
+                               <p><span id="value-8"></span>/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange8" class="slider" min="0" max="10" value="3">
+                        </div>
+                    </div>
+                </div>
+                <p id="errorDiv">
+                    <em>* You cannot choose a number twice.</em>
+                </p>
+                
+                <button type="submit" class="done">
+                    Next
+                </button>
+            </form>
+
+            <div class="top-check">
+                <i class="fa-solid fa-check faa-check"></i>
+            </div>
+        </div>
+
+    </main>
+    <script src="interest.js"></script>
+</body>
+</html>
+        <!-- <i class="fa-solid fa-check"></i>
+        <i class="fa-regular fa-graduation-cap"></i>
+        <i class="fa-solid fa-check"></i>
+
+
+
+                    <li>
+                        <Label>Course of Study in School</Label>
+                        <br> <br>
+                        <input type="text" placeholder="Course of Study">
+                    </li>
+                    <li>
+                        <Label>Are you a student?</Label>
+                        <br> <br>
+                        <button class="yes">Yes</button>
+                        <button>No</button>
+                    </li>
+                    <li>
+                        <Label>Did you graduate?</Label>
+                        <br> <br>
+                        <button class="yes">Yes</button>
+                        <button>No</button>
+                    </li>
+                    <li>
+                        <Label>Does your country require post-graduation service?</Label>
+                        <br> <br>
+                        <button class="yes">Yes</button>
+                        <button>No</button>
+                    </li> -->

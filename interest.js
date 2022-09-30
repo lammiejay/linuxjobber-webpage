@@ -1,3 +1,8 @@
+// pTag = document.getElementById("errorEm");
+// pTag.style.display = "none";
+
+// sliderError();
+
 // First Range
 const slider1 = document.getElementById("myRange1");
 const output1 = document.getElementById("value-1");
@@ -9,10 +14,10 @@ slider1.oninput = function() {
 }
 
 slider1.addEventListener("input", function(){
-    const x1 = slider1.value * 10;
+    const x1 = slider1.value;
     console.log(x1)
-    const color1 = `linear-gradient(90deg, #800165${x1}%, #F1F3FD${x1}%)`;
-    slider1.style.backgroundColor = color1;
+    slider1.style.backgroundColor = color(x1);
+   slideCheck(x1)
 })
 
 // 2nd Range
@@ -28,8 +33,8 @@ slider2.oninput = function() {
 slider2.addEventListener("input", function(){
     const x2 = slider2.value;
     console.log(x2)
-    const color2 = 'linear-gradient(90deg, #800165' + x2 + '%, #F1F3FD' + x2 + '%)';
-    slider2.style.backgroundColor = color2;
+    slider2.style.backgroundColor = color(x2);
+   slideCheck(x2);
 })
 
 // 3rd Range
@@ -45,8 +50,8 @@ slider3.oninput = function() {
 slider3.addEventListener("input", function(){
     const x3 = slider3.value;
     console.log(x3)
-    const color3 = 'linear-gradient(90deg, #800165' + x3 + '%, #F1F3FD' + x3 + '%)';
-    slider3.style.backgroundColor = color3;
+    slider3.style.backgroundColor = color(x3);
+   slideCheck(x3);
 })
 
 // 4th Range
@@ -62,8 +67,8 @@ slider4.oninput = function() {
 slider4.addEventListener("input", function(){
     const x4 = slider4.value;
     console.log(x4)
-    const color4 = 'linear-gradient(90deg, #800165' + x4 + '%, #F1F3FD' + x4 + '%)';
-    slider4.style.backgroundColor = color4;
+    slider4.style.backgroundColor = color(x4);
+   slideCheck(x4);
 })
 
 // 5nd Range
@@ -79,8 +84,8 @@ slider5.oninput = function() {
 slider5.addEventListener("input", function(){
     const x5 = slider5.value;
     console.log(x5)
-    const color5 = 'linear-gradient(90deg, #800165' + x5 + '%, #F1F3FD' + x5 + '%)';
-    slider5.style.backgroundColor = color5;
+    slider5.style.backgroundColor = color(x5);
+   slideCheck(x5);
 })
 // 6nd Range
 const slider6 = document.getElementById("myRange6");
@@ -95,8 +100,8 @@ slider6.oninput = function() {
 slider6.addEventListener("input", function(){
     const x6 = slider6.value;
     console.log(x6)
-    const color6 = 'linear-gradient(90deg, #800165' + x6 + '%, #F1F3FD' + x6 + '%)';
-    slider6.style.backgroundColor = color6;
+    slider6.style.backgroundColor = color(x6);
+   slideCheck(x6);
 })
 
 // 7nd Range
@@ -112,8 +117,8 @@ slider7.oninput = function() {
 slider7.addEventListener("input", function(){
     const x7 = slider7.value;
     console.log(x7)
-    const color7 = 'linear-gradient(90deg, #800165' + x7 + '%, #F1F3FD' + x7 + '%)';
-    slider7.style.backgroundColor = color7;
+    slider7.style.backgroundColor = color(x7);
+   slideCheck(x7);
 })
 
 // 8nd Range
@@ -129,17 +134,62 @@ slider8.oninput = function() {
 slider8.addEventListener("input", function(){
     const x8 = slider8.value;
     console.log(x8)
-    const color8 = 'linear-gradient(90deg, #800165' + x8 + '%, #F1F3FD' + x8 + '%)';
-    slider8.style.backgroundColor = color8;
+    slider8.style.backgroundColor = color(x8);
+   slideCheck(x8);
 })
-
-// error message
-let sliderValue = [slider1.value, slider2.value, slider3.value, slider4.value, slider5.value, slider6.value, slider7.value, slider8.value];
-
-for (let i = 0; i < sliderValue.length; i++){
-    sliderValue.forEach(index => {
-        if (sliderValue.filter(index) === sliderValue.filter(index)) {
-            console.log("try another range")
-        }
-    });
+const color = (col) => {
+    `linear-gradient(90deg, #800165 ${col} %, #F1F3FD ${col} %)`
 }
+// error message
+
+
+// for (let i = 0; i < sliderValue.length; i++){
+//     sliderValue.forEach(index => {
+//         if (sliderValue.filter(index) === sliderValue.filter(index)) {
+//             console.log("try another range")
+//         }
+//     });
+// }
+
+const sliderValue = [slider1.value, slider2.value, slider3.value, slider4.value, slider5.value, slider6.value, slider7.value, slider8.value];
+
+const slideCheck = (param) => {
+    // e.preventDefault();
+    let val = sliderValue;
+
+    for (let i = 0; i < val.length; i++) {
+        if (param === val[i]) {
+            console.log("try another range");
+            // pTag.innerHTML = "* You cannot choose a number twice.";
+            // pTag.style.display = "block";
+        } else if(param === 0 || param != val[i]){
+            pTag.style.display = "none";
+        }
+    }
+}
+// switch (x1) {
+//     case (x1 == slider2.value):
+//         console.log("try another range")
+//         break;
+
+//     default:
+//         console.log("not working")
+//         break;
+// }
+// for (let i = 0; i < sliderValue.length; i++) {
+//     const element = sliderValue[i];
+//     if (element === sliderValue[i]){
+//         console.log("try another range")
+//     }
+// }
+// function slideChecker() {
+//     let sliderValue = [slider1.value, slider2.value, slider3.value, slider4.value, slider5.value, slider6.value, slider7.value, slider8.value];
+//     for (let i = 0; i < sliderValue.length; i++) {
+//         const element = sliderValue[i];
+//         if (element === sliderValue[i]){
+//             console.log("try another range")
+//         }
+//     }    
+// }
+
+// slideChecker();

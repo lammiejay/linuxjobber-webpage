@@ -1,0 +1,116 @@
+.profile{
+    padding: 4px 0;
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 12px;
+}
+
+.profile-para{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+    line-height: 155.02%;
+    color: #30302E;
+    margin-bottom: -30px;
+}
+
+.push-right{
+    margin-right: 1.2rem;
+}
+
+.name-form,
+.student-form,
+.range-form{
+    height: 199px;
+    margin-top: 43px;
+    padding: 2rem;
+}
+
+.name-form,
+.student-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    font-size: 17px;
+    line-height: 155.02%;
+    color: #30302E;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.fa-pencil{
+    position: absolute;
+    top: 20px;
+    right: 26px;
+    z-index: 2;
+    color: #C5CCEC;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 1px solid #C5CCEC;
+    border-radius: 40%;
+    padding: 6px;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.fa-pencil:hover{
+    color: #30302E;
+    border-left: 1px solid #30302E;
+}
+
+input{
+    margin-right: 1rem;
+    padding: 0 1.5rem;
+    height: 53px;
+    background: #F1F3FD;
+    border-radius: 17px;
+    font-size: 20px;
+    border: none;
+    color: #D3014E;
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 14px;
+    color: #C5CCEC;
+}
+
+.labels{
+    margin-bottom: -2rem;
+}
+
+.slider::-webkit-slider-thumb {
+    display: none;
+}
+
+#myRange1{
+    background: linear-gradient(90deg, #800165 10%, #F1F3FD 10%);
+}
+
+#myRange2{
+    background: linear-gradient(90deg, #800165 90%, #F1F3FD 90%);
+}
+
+form{
+    position: relative;
+}
+
+.top-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(180deg, #800165 0%, #D3014E 100%);
+    border-radius: 22px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #F5F5F5;
+}

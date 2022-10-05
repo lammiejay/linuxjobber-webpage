@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../linuxjobber logo.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="../interest.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>LInuXjoBBer CLassRoom Profile</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <img src="../linuxjobber logo.svg">
+            <p>Classroom Profile</p>
+            <p class="classroom-link">
+                Go to Classroom
+                <i class="fa-solid fa-angle-right"></i>
+            </p>
+        </nav>
+    </div>
+    <main>
+        <div class="left">
+            <div class="profile-img">
+                <img src="../Gbadamosi Olamide.jpg" class="profile-picture">
+                <div class="camera-div">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <h2>Gbadamosi Olamide</h2>
+
+            <div class="short-links">
+                <a class="short-links-btn" href="#">
+                    <div class="profile">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Profile</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <a class="short-links-btn" href="#">
+                    <div class="courses">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>Courses</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <a class="short-links-btn" href="#">
+                    <div class="attendance">
+                        <i class="fa-solid fa-check att-check"></i>
+                        <p>Attendance</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>&nbsp Logout</p>
+            </div>
+        </div>
+        <div class="right">
+            
+            <p class="profile-para"><i class="fa-solid fa-user push-right"></i> Your Profile</p>
+            
+            <form class="name-form">
+                <div class="name-container">
+                    <label for="firstname">First Name:</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="First Name">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                </div>
+                
+                <div class="name-container">
+                    <label for="lastname">Last Name:</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="Last Name">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                </div>
+                
+                <div class="email-container">
+                    <label for="email">E-mail:</label>
+                    <div>
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <div class="top-check">
+                    <i class="fa-solid fa-check faa-check"></i>
+                </div>
+            </form>
+
+            <form class="student-form">
+                <div class="course-container">
+                    <label for="course">Course of Study in School:</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="English Language">
+                    </div>
+                </div>
+                
+                <div class="student-container">
+                    <label for="studentjob">I am a Student:</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="Developer">
+                    </div>
+                </div>
+                
+                <div class="grad-container">
+                    <label for="graddate">Expected Graduation Date:</label>
+                    <div>
+                        <input type="text" placeholder="October 4th, 2021">
+                    </div>
+                </div>
+
+                <div class="top-check">
+                    <i class="fa-solid fa-check faa-check"></i>
+                </div>
+            </form>
+
+            <form class="range-form">
+                <div class="range-sliders">
+                    <p>My Interests:</p>
+                    <div class="slide-one">
+                        <div class="cybersecurity range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">CyberSecurity</label>
+                               <p>1/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange1" class="slider" min="0" max="10" value="1">
+                        </div>
+                        <div class="developer range-container">
+                            <div class="labels">
+                                <label class="jobs" for="">Developer</label>
+                               <p>9/10</p> 
+                            </div>
+                            
+                            <input type="range" id="myRange2" class="slider" min="0" max="10" value="9">
+                        </div>
+                    </div>
+            </form>
+
+        </div>
+
+    </main>
+    <script src="../interest.js"></script>
+</body>
+</html>
+
+<!-- <i class="fa-solid fa-pencil"></i> -->

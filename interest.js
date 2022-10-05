@@ -143,3 +143,6 @@ for (let i = 0; i < sliderValue.length; i++){
         }
     });
 }
+
+
+// BUTTONS LIST 

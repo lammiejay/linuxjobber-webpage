@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    background-color: #F5F5F5;
+    background-color: #E5E5E5;
 }
 
 /* Styling for Navbar */
@@ -96,6 +96,10 @@ main{
     margin-top: 20%;
 }
 
+.short-links-btn{
+    text-decoration: none;
+}
+
 .profile,
 .attendance,
 .courses{
@@ -103,6 +107,14 @@ main{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 15px;
+    cursor: pointer;
+    color: #30302E;
+}
+
+.profile:hover,
+.attendance:hover,
+.courses:hover{
+    box-shadow: 0px 4px 29px #F0F3FF;
 }
 
 .fa-user,
@@ -110,7 +122,7 @@ main{
 .att-check{
     width: 53px;
     height: 53px;
-    background: #FFFFFF;
+    background: #F1F3FD;
     border-radius: 17px;
     display: flex;
     justify-content: center;
@@ -260,8 +272,8 @@ button a{
 }
 
 #grad-date{
-    padding: 0 1.5rem;
     width: 299px;
+    padding: 0 1.5rem;
     height: 53px;
     background: #F1F3FD;
     border-radius: 17px;
